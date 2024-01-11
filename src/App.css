@@ -1,0 +1,57 @@
+.todos {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todos h1 {
+  color: #4d4d4d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.todo {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.todo button {
+  background-color: transparent;
+  border: none;
+  color: #4d4d4d;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.todo button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo button:focus {
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
